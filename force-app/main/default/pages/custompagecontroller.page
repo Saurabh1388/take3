@@ -1,0 +1,35 @@
+<apex:page controller="ArithmeticClass1">
+ <apex:form >
+  <apex:pageBlock title="Calculator">
+
+    <apex:pageBlockButtons >
+     <apex:commandButton value="ADD" action="{!addition}"/>
+     <apex:commandButton value="SUB" action="{!subtraction}"/>
+     <apex:commandButton value="DIV" action="{!division}"/>
+     <apex:commandButton value="MUL" action="{!multiplication}"/>
+     <apex:commandButton value="REM" action="{!remainder}"/>
+    </apex:pageBlockButtons>
+
+    <apex:pageBlockSection title="Arithmetic Calculation">
+     <apex:pageBlockSectionItem >
+      <apex:outputLabel value="First Number"/>
+      <apex:inputText value="{!num1}" />
+     </apex:pageBlockSEctionItem><br/>
+
+
+     <apex:pageBlockSectionItem >
+      <apex:outputLabel value="Second Number"/>
+      <apex:inputText value="{!num2}" />
+     </apex:pageBlockSectionItem><br/>
+
+
+     <apex:pageBlockSectionItem >
+      <apex:outputLabel value="Result"/>
+      <apex:inputText value="{!res}" />
+     </apex:pageBlockSectionItem>
+
+
+    </apex:pageBlockSection>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>
